@@ -8,7 +8,7 @@ const countBits = (num) => {
       suma += 1;
     }
   });
-  return console.log(suma);
+  return suma;
 };
 
-countBits(4);
+countBits(0);
