@@ -1,5 +1,6 @@
 function topThreeWords(text) {
-  const matches = text.toLowerCase().match(/[a-z]+('[a-z]+)*/g) || [];
+  const matches = text.toLowerCase()
+  .match(/[a-z]+('[a-z]+)*/g) || [];
   const counts = matches.reduce(
     (acc, word) => ((acc[word] = -~acc[word]), acc),
     {}
